@@ -10,16 +10,16 @@ public class BaseTest {
     public WebDriver driver;
 
     @BeforeClass
-     public void setup(){
+    public void setup(){
 
-         driver=new ChromeDriver();
+        driver=new ChromeDriver();
 
-         driver.manage().window().maximize();
-     }
+        driver.manage().window().maximize();
+    }
 
-     @AfterClass
+    @AfterClass
     public void teardown(){
-    driver.quit();
+        driver.quit();
     }
 
 }

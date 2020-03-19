@@ -23,12 +23,16 @@ public class HomePage extends BasePage {
         return this;
     }
 
-    public void clickOverSearchBox(){
+    public void clickOverCancunResortMenuOption(){
 
-        click(HomePageSearchBox);
+        click(CancunMenuOption);
+        waitVisibility(H1Tag);
     }
 
 //**************Selectors
 
-    By HomePageSearchBox = By.xpath("//input[@placeholder='Destino']");
+    By CancunMenuOption = By.xpath("//a[@title='Cancun Resort']");
+
+    By H1Tag= By.xpath("//h1");
+
 }
